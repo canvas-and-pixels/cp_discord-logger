@@ -1,8 +1,5 @@
-library cp_discord_logger;
-
 import 'package:cp_discord_logger/core/core.dart';
 
-/// CPDiscordLogger class
 class CPDiscordLogger {
   static CPDiscordLogger? _instance;
   // Add this static getter to access the instance
@@ -20,7 +17,7 @@ class CPDiscordLogger {
   // Private constructor to prevent instantiation
   CPDiscordLogger._();
 
-  /// add `channelID` and `botToken` from your discord project
+  // Initialize the singleton
   static void init({
     required String botToken,
     required String channelID,
